@@ -1,0 +1,82 @@
+body {
+		background-color: #ebfcc0;
+		padding-top: 50px;
+}
+
+.wrap {
+	width: 700px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+	div[class^="rgb"] {
+		width: 700px;
+		height: 50px;
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		line-height: 50px;
+		color: white;
+		border-radius: 2px;
+
+	}
+	a {
+		display: block;
+		height: 100%;
+		text-decoration: none;
+		color: white;
+
+	}
+
+		.rgb_18 {
+		background-color: rgb(255, 31, 31);
+	}
+		.rgb_19 {
+		background-color: rgb(255, 31, 40);
+	}
+		.rgb_20 {
+		background-color: rgb(255, 31, 90);
+	}
+		.rgb_21 {
+		background-color: rgb(255, 31, 140);
+	}
+		.rgb_22 {
+		background-color: rgb(255, 31, 190);
+	}
+		.rgb_23 {
+		background-color: rgb(255, 31, 240 );
+	}
+		.rgb_24 {
+		background-color: rgb(210, 31, 255);
+	}
+		.rgb_25 {
+		background-color: rgb(160, 31, 255);
+	}
+		.rgb_26 {
+		background-color: rgb(110, 31, 255);
+	}
+		.rgb_27 {
+		background-color: rgb(60, 31, 255);
+	}
+		.rgb_28 {
+		background-color: rgb(31, 60, 255);
+	}
+		.rgb_29 {
+		background-color: rgb(31, 110, 255);
+	}
+		.rgb_30 {
+		background-color: rgb(31, 160, 255 );
+	}
+
+	div[class^="rgb"]:active {
+		width: 720px;
+		height: 54px;
+		line-height: 54px;
+		position: relative;
+		top: -2px;
+		outline: 2px solid white;
+		margin-top: 16px;
+	}
