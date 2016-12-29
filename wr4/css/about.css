@@ -1,0 +1,298 @@
+@font-face {
+	font-family: damion-regular;
+	src:	url(../font/damion-regular-webfont.woff2),
+				url(../font/damion-regular-webfont.woff),
+				url(../font/Damion-Regular.ttf);
+	font-weight:	normal;
+	font-style:	normal;
+}
+@font-face {
+	font-family: lato-regular;
+	src:	url(../font/lato-regular-webfont.woff2),
+				url(../font/damion-regular-webfont.woff),
+				url(../font/Lato-Regular.ttf);
+	font-weight:	normal;
+	font-style:	normal;
+}
+
+@font-face {
+	font-family: lato-black;
+	src:	url(../font/),
+				url(../font/),
+				url(../font/Lato-Black.ttf);
+	font-weight:	normal;
+	font-style:	normal;
+}
+
+@font-face {
+	font-family: lato-light;
+	src:	url(../font/),
+				url(../font/),
+				url(../font/Lato-Light.ttf);
+	font-weight:	normal;
+	font-style:	normal;
+}
+
+a, a:hover, a:visited ,a:link ,a:active {
+	text-decoration: none;
+	color: white;
+}
+
+body {
+	min-height: 400px;
+	background: #655464 url('../img/bg_ef_3f.png') no-repeat;	
+	background-position: center top;
+	background-size: cover;
+}
+
+.logo {
+	color: white;
+	font-family: damion-regular ,arial ,sans-serif;
+	font-size: 4em;
+}
+
+div.col-lg-5>ul li {
+	color: #E9E9E9;
+	font-family: lato-regular ,arial ,sans-serif;
+	font-size: 1.3em;
+	display: inline-block;
+	margin-right: 10px;
+	padding-top: 35px;
+	padding-bottom: 14px;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	cursor: default;
+	transition: 0.3s;
+	width: 100px;
+	text-align: center;
+}
+
+div.col-lg-5>ul li:nth-child(3) {
+	background-color: #90778D;
+}
+
+div.col-lg-5>ul li:hover {
+	background-color: #90778D;
+}
+
+.col-lg-8 h2 {
+	margin-top: 110px;
+	text-align: center;
+	font-size: 60px;
+	color: white;
+	font-family: lato-light ,arial ,sans-serif;
+	text-transform: uppercase;
+}
+
+.col-lg-8 .tbt a {
+	opacity: 0.4;
+}
+
+.col-lg-8 .tbt {
+	margin-top: 47px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	font-family: lato-regular ,arial ,sans-serif;
+	text-transform: uppercase;
+}
+
+.col-lg-8 p:last-of-type {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 15px;
+	color: white;
+	font-family: lato-regular ,arial ,sans-serif;
+	opacity: 0.8;
+}
+
+[class*="card"] {
+	height: 400px;
+	width: 260px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 49px;
+	padding-top: 200px;
+	background-color: rgba(76,63,75, 0.5);
+	border-radius: 4px;	
+	position: relative;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: 0.3s;
+}
+
+[class*="card"]::before {
+	content: '';
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	background-image: url('../img/human_sprite.png');
+	background-repeat: no-repeat;
+	background-position: -280px 0;
+	left: 43px;
+	top: 35px;
+}
+
+
+.team {
+	margin-top: 49px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 220px;
+	height: 40px;
+	color: white;
+	font-size: 20px;
+	font-family: lato-black ,arial ,sans-serif;
+	text-align: center;
+	background-color: #A2CA71;
+	border-radius: 5px;
+	line-height: 32px;
+	text-transform: uppercase;
+	position: relative;
+	padding: 5px;
+}
+
+.team::after {
+	content: '';
+	border: 12px solid transparent;
+	border-top: 12px solid #A2CA71;
+	position: absolute;
+	left: 50%;
+	margin-left: -12px;
+  bottom: -24px;
+  width: 0
+}
+
+[class*="card"] h3 {
+	color: rgba(255,255,255,0.5);
+	font-family: lato-black ,arial ,sans-serif;
+	text-transform: uppercase;
+
+}
+
+[class*="card"] p {
+	color: rgba(162,202,113, 1) ;
+	font-family: lato-regular ,arial ,sans-serif;
+	font-size: 14px;
+}
+
+.social {
+	margin: 0;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 47px;
+	width: 210px;
+	display: block;	
+}
+.social li {
+	width: 31px;
+	height: 31px;
+	background: #A0859D ;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 21px;
+	position: relative;
+	transition: 1s;
+}
+
+.social li:last-of-type {
+	margin-right: 0px;
+}
+
+.social li::after {
+	content: '';
+	background-image: url('../img/soc_sprite.png');
+	background-position: ;
+	background-size: 95px ;
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 27px;
+	width: 17px;
+	left: 6px;
+	top: 3px;
+}
+
+.social li:nth-child(2)::after {
+	content: '';
+	background-image: url('../img/soc_sprite.png');
+	background-position: -22px 0;
+	background-size: 95px ;
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 27px;
+	width: 17px;
+	left: 9px;
+	top: 3px;
+}
+
+.social li:nth-child(3)::after {
+	content: '';
+	background-image: url('../img/soc_sprite.png');
+	background-position: -46px 0;
+	background-size: 95px ;
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 27px;
+	width: 17px;
+	left: 9px;
+	top: 3px;
+}
+
+.social li:nth-child(4)::after {
+	content: '';
+	background-image: url('../img/soc_sprite.png');
+	background-position: -71px 0;
+	background-size: 95px ;
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 27px;
+	width: 17px;
+	left: 9px;
+	top: 3px;
+}
+
+/*----------------------HOVER_CARD--------------------------------------*/
+
+[class*="card"]:hover {
+	background-color: rgba(76,63,75, 0.8);
+}
+
+[class*="card"]:hover h3 {
+	color: rgba(255,255,255,1);
+}
+
+[class*="card"]:hover p {
+	color: rgba(239,132,116, 1);
+}
+
+[class*="card"]:hover::before {
+	content: '';
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	background-image: url('../img/human_sprite.png');
+	background-repeat: no-repeat;
+	background-position: 1px 0;
+	left: 43px;
+	top: 35px;
+}
+
+[class*="card"]:hover .social li:nth-of-type(1) {
+	background: #4260AD;
+}
+
+[class*="card"]:hover .social li:nth-of-type(2) {
+	background: #86CCD8;
+}
+
+[class*="card"]:hover .social li:nth-of-type(3) {
+	background: #DB5B66;
+}
+
+[class*="card"]:hover .social li:nth-of-type(4) {
+	background: #4260AD;
+}

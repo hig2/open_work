@@ -1,0 +1,181 @@
+@font-face {
+	font-family: damion-regular;
+	src:	url(../font/damion-regular-webfont.woff2),
+				url(../font/damion-regular-webfont.woff),
+				url(../font/Damion-Regular.ttf);
+	font-weight:	normal;
+	font-style:	normal;
+}
+@font-face {
+	font-family: lato-regular;
+	src:	url(../font/lato-regular-webfont.woff2),
+				url(../font/damion-regular-webfont.woff),
+				url(../font/Lato-Regular.ttf);
+	font-weight:	normal;
+	font-style:	normal;
+}
+
+@font-face {
+	font-family: lato-black;
+	src:	url(../font/),
+				url(../font/),
+				url(../font/Lato-Black.ttf);
+	font-weight:	normal;
+	font-style:	normal;
+}
+
+@font-face {
+	font-family: lato-light;
+	src:	url(../font/),
+				url(../font/),
+				url(../font/Lato-Light.ttf);
+	font-weight:	normal;
+	font-style:	normal;
+}
+
+a, a:hover, a:visited ,a:link ,a:active {
+	text-decoration: none;
+	color: white;
+}
+
+body {
+	min-height: 400px;
+	background: #AF4952 url('../img/bg_ef_2f.png') no-repeat;	
+	background-position: center top;
+	background-size: cover;
+}
+
+.logo {
+	color: white;
+	font-family: damion-regular ,arial ,sans-serif;
+	font-size: 4em;
+}
+
+div.col-lg-5>ul li {
+	color: #E9E9E9;
+	font-family: lato-regular ,arial ,sans-serif;
+	font-size: 1.3em;
+	display: inline-block;
+	margin-right: 10px;
+	padding-top: 35px;
+	padding-bottom: 14px;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	cursor: default;
+	transition: 0.3s;
+	width: 100px;
+	text-align: center;
+}
+
+div.col-lg-5>ul li:nth-child(2) {
+	background-color: #DB5B66;
+}
+
+div.col-lg-5>ul li:hover {
+	background-color: #DB5B66;
+}
+
+.col-lg-8 h2 {
+	margin-top: 110px;
+	text-align: center;
+	font-size: 60px;
+	color: white;
+	font-family: lato-light ,arial ,sans-serif;
+}
+
+.col-lg-8 .tbt a {
+	opacity: 0.4;
+}
+
+.col-lg-8 .tbt {
+	margin-top: 47px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	font-family: lato-regular ,arial ,sans-serif;
+	text-transform: uppercase
+}
+
+.col-lg-8 p:last-of-type {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 15px;
+	color: white;
+	font-family: lato-regular ,arial ,sans-serif;
+	opacity: 0.8;
+}
+
+[class*="card"] {
+	height: 400px;
+	width: 260px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 55px;
+	padding-top: 200px;
+	background-color: rgba(196,83,92, 0.5);
+	border-radius: 4px;	
+	position: relative;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.card_1::before {
+	content: '';
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	background-image: url('../img/page2_sprite.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	left: 52px;
+	top: 50px;
+}
+
+.card_2::before {
+	content: '';
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	background-image: url('../img/page2_sprite.png');
+	background-repeat: no-repeat;
+	background-position: -158px 0;
+	left: 55px;
+	top: 50px;
+}
+
+.card_3::before {
+	content: '';
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	background-image: url('../img/page2_sprite.png');
+	background-repeat: no-repeat;
+	background-position: -314px 0;
+	left: 55px;
+	top: 50px;
+}
+
+.card_4::before {
+	content: '';
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	background-image: url('../img/page2_sprite.png');
+	background-repeat: no-repeat;
+	background-position: -468px 0;
+	left: 55px;
+	top: 50px;
+}
+
+[class*="card"] h3 {
+	color: white;
+	text-transform: uppercase
+	font-family: lato-light ,arial ,sans-serif;
+}
+
+[class*="card"] p {
+	padding-top: 30px;
+	color: white;
+	font-family: lato-regular ,arial ,sans-serif;
+}
