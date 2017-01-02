@@ -186,16 +186,25 @@ div.col-lg-5>ul li:hover {
 	width: 210px;
 	display: block;	
 }
-.social li {
+.social li  {
+	display: inline-block;
+	margin-right: 21px;
+	position: relative;
+	transition: 1s;
+}
+.social li a {
 	width: 31px;
 	height: 31px;
 	background: #A0859D ;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
-	display: inline-block;
-	margin-right: 21px;
-	position: relative;
+	display: block;
+	background-image: url('../img/soc_sprite.png');
+	background-position: 5px ;
+	background-size: 110px ;
+	background-repeat: no-repeat;
+	outline: none !important;
 	transition: 1s;
 }
 
@@ -203,57 +212,18 @@ div.col-lg-5>ul li:hover {
 	margin-right: 0px;
 }
 
-.social li::after {
-	content: '';
-	background-image: url('../img/soc_sprite.png');
-	background-position: ;
-	background-size: 95px ;
-	background-repeat: no-repeat;
-	position: absolute;
-	height: 27px;
-	width: 17px;
-	left: 6px;
-	top: 3px;
+.social li:nth-of-type(2) a {
+	background-position: -18px ;
 }
 
-.social li:nth-child(2)::after {
-	content: '';
-	background-image: url('../img/soc_sprite.png');
-	background-position: -22px 0;
-	background-size: 95px ;
-	background-repeat: no-repeat;
-	position: absolute;
-	height: 27px;
-	width: 17px;
-	left: 9px;
-	top: 3px;
+.social li:nth-of-type(3) a {
+	background-position: -45px ;
 }
 
-.social li:nth-child(3)::after {
-	content: '';
-	background-image: url('../img/soc_sprite.png');
-	background-position: -46px 0;
-	background-size: 95px ;
-	background-repeat: no-repeat;
-	position: absolute;
-	height: 27px;
-	width: 17px;
-	left: 9px;
-	top: 3px;
+.social li:nth-of-type(4) a {
+	background-position: -75px ;
 }
 
-.social li:nth-child(4)::after {
-	content: '';
-	background-image: url('../img/soc_sprite.png');
-	background-position: -71px 0;
-	background-size: 95px ;
-	background-repeat: no-repeat;
-	position: absolute;
-	height: 27px;
-	width: 17px;
-	left: 9px;
-	top: 3px;
-}
 
 /*----------------------HOVER_CARD--------------------------------------*/
 
@@ -281,18 +251,18 @@ div.col-lg-5>ul li:hover {
 	top: 35px;
 }
 
-[class*="card"]:hover .social li:nth-of-type(1) {
-	background: #4260AD;
+[class*="card"]:hover .social li:nth-of-type(1) a {
+	background-color: #4260AD;
 }
 
-[class*="card"]:hover .social li:nth-of-type(2) {
-	background: #86CCD8;
+[class*="card"]:hover .social li:nth-of-type(2) a {
+	background-color: #86CCD8;
 }
 
-[class*="card"]:hover .social li:nth-of-type(3) {
-	background: #DB5B66;
+[class*="card"]:hover .social li:nth-of-type(3) a {
+	background-color: #DB5B66;
 }
 
-[class*="card"]:hover .social li:nth-of-type(4) {
-	background: #4260AD;
+[class*="card"]:hover .social li:nth-of-type(4) a {
+	background-color: #4260AD;
 }
